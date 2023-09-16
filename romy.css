@@ -1,0 +1,277 @@
+
+/* Conteneur principal pour centrer le contenu */
+.container {
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte dans le conteneur */
+    padding: 20px; /* Espacement autour du contenu */
+    border-radius: 10px; /* Coins arrondis du conteneur */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    font-family: 'arial', sans-serif;
+
+
+}
+
+/* Réduire la taille de l'image */
+.image-reduite {
+    width: 250px; /* Spécifiez la largeur souhaitée */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
+    border-radius: 50%;
+}
+
+/* Styles pour les titres.*/
+.texte-centre {
+    margin-left: 20px; /* Espacement entre l'image et le texte (ajustez selon vos besoins) */
+}
+
+.texte-centre h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texte-centre h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 18px; /* Taille de police générale */
+    line-height: 1.5; /* Espacement entre les lignes du texte */
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+    font-family: 'arial', sans-serif;
+}
+
+/* Style pour le titre principal */
+h1 {
+    font-size: 28px; /* Taille de police du titre principal */
+    font-weight: bold; /* Police en gras */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+
+    font-family: 'arial', sans-serif; /* Utilisez le nom de la police tel qu'il est spécifié dans la Google Fonts URL */
+
+
+}
+
+/* Styles pour les titres secondaires */
+h2 {
+    font-size: 24px; /* Taille de police des titres secondaires */
+    font-weight: bold; /* Police en gras */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement en bas des titres secondaires */
+    font-family: 'arial', sans-serif;
+}
+
+/* Styles pour les listes à puces */
+ul {
+    list-style-type: disc; /* Type de puce */
+    margin-left: 20px; /* Espacement à gauche de la liste à puces */
+    margin-bottom: 20px; /* Espacement en bas de la liste à puces */
+}
+
+/* Styles pour les liens */
+a {
+    text-decoration: underline; /* Soulignement des liens */
+    color: #007BFF; /* Couleur des liens */
+}
+
+/* Style pour le fond de la page */
+body {
+    margin: 0; /* Supprimer les marges par défaut du navigateur */
+    padding: 0; /* Supprimer les rembourrages par défaut du navigateur */
+    font-size: 16px;
+
+}
+.motif-blanc{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("image/feuille.png");
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Style pour les liens autour des images */
+a {
+    display: inline-block; /* Pour que les liens enveloppent les images */
+    margin: 10px; /* Espacement entre les liens */
+    text-decoration: none; /* Supprimer la décoration de texte par défaut des liens */
+    transition: transform 0.2s ease-in-out; /* Transition douce pour l'effet de survol */
+}
+
+/* Style pour les liens au survol de la souris */
+a:hover {
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+}
+
+/* Style pour les images à l'intérieur des liens */
+a img {
+    max-width: 100%; /* Assurez-vous que les images ne dépassent pas la largeur du conteneur */
+    border: none; /* Supprimer la bordure par défaut des liens autour des images */
+}
+
+/* Style pour le footer */
+footer {
+    color: black; /* Couleur du texte du footer */
+    padding: 20px; /* Espacement autour du contenu du footer */
+    text-align: center; /* Centre le texte dans le footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style pour les titres du footer */
+footer h1, footer h2 {
+    font-size: 24px; /* Taille de police des titres du footer */
+    font-weight: bold; /* Police en gras */
+    margin-bottom: 10px; /* Espacement en bas des titres */
+}
+
+/* Style pour les liens du footer */
+footer a {
+    color: black; /* Couleur des liens dans le footer */
+    text-decoration: none; /* Supprime la décoration de texte des liens */
+    margin: 0 10px; /* Espacement horizontal entre les liens */
+    transition: color 0.2s ease-in-out; /* Transition de couleur en douceur au survol */
+}
+
+/* Style pour les liens du footer au survol de la souris */
+footer a:hover {
+    text-decoration: underline; /* Soulignement au survol des liens */
+    color: green; /* Couleur différente au survol */
+}
+
+/* Style pour les images du footer */
+footer img {
+    max-width: 40px; /* Spécifiez la largeur souhaitée pour les images (40px dans cet exemple) */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
+    margin-top: 10px; /* Espacement en haut de l'image */
+}
+/* Style pour la div .adresse */
+.adresse {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 20px; /* Espacement horizontal entre les éléments */
+}
+
+/* Style pour l'image dans la div .adresse */
+.adresse img {
+    max-width: 100px; /* Spécifiez la largeur souhaitée pour l'image */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
+}
+.adherent img{
+    max-width: 100px;
+    height: auto;
+    margin-right: 5px;
+}
+
+/* Media query pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+        .image-reduite {
+    width: 200px; /* Spécifiez la largeur souhaitée */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
+
+ }
+}
+/* Style pour le conteneur du texte centré */
+.centered-text {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    max-width: 800px; /* Largeur maximale du conteneur (ajustez selon vos besoins) */
+}
+
+/* Style pour les paragraphes du texte */
+.centered-text p {
+    font-size: 18px; /* Taille de police des paragraphes */
+    margin-bottom: 20px; /* Espacement en bas des paragraphes */
+}
+
+/* Style pour le conteneur des liens centrés */
+.centered-links {
+    text-align: center; /* Centre le contenu horizontalement */
+}
+
+/* Style pour les liens */
+.centered-links a {
+    display: inline-block; /* Affiche les liens en ligne les uns à côté des autres */
+    margin: 10px; /* Espacement entre les liens (ajustez selon vos besoins) */
+}
+
+/* Style pour les images dans les liens */
+.centered-links img {
+    max-width: 190px; /* Spécifiez la largeur souhaitée pour les images (100px dans cet exemple) */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
+}
+
+
+
+/* Style pour le titre */
+h1 {
+    text-align: center; /* Centre le titre horizontalement */
+}
+
+/* Style pour le conteneur du tableau */
+.table-container {
+    text-align: center; /* Centrez le contenu du tableau horizontalement */
+    margin: 0 auto; /* Centrez le tableau horizontalement */
+    width: 50%; /* Largeur du tableau (ajustez selon vos besoins) */
+}
+
+/* Style pour le tableau */
+table {
+    width: 100%; /* Largeur du tableau (remplit la largeur du conteneur) */
+    border-collapse: collapse; /* Fusionnez les bordures de la table */
+}
+
+/* Style pour les cellules du tableau */
+th, td {
+    padding: 10px; /* Espacement interne pour améliorer la lisibilité */
+    border: 1px solid #ccc; /* Ajoutez des bordures aux cellules */
+    text-align: left; /* Alignez le texte à gauche par défaut */
+}
+
+/* Style pour les cellules de montant */
+td.montant {
+    text-align: right; /* Alignez le texte des cellules de montant à droite */
+
+}
+
+/* Style pour le libellé */
+.libelle {
+    text-align: left; /* Alignez le texte du libellé à gauche */
+}
+
+/* Centrez le texte du libellé et du montant dans la cellule */
+th span,
+td span {
+    display: inline-block; /* Affichez les éléments en ligne */
+    width: 50%; /* Ajustez la largeur des cellules */
+}
+.reduit{
+    width: 35px;
+    height: auto;
+} /* reduction de la taille du logo map */
+
+
+/* Applique le fond d'écran à l'ensemble de la page */
+html {
+  background-image: url('image/fond-ecran.png');
+  background-size: cover; /* Ajuste la taille de l'image pour remplir tout l'écran */
+  background-repeat: no-repeat; /* Empêche ou non la répétition de l'image */
+  background-attachment: fixed; /* Fixe l'image en fond d'écran pour éviter le défilement */
+  background-position: center;
+  
+}
+
+
+
+
+
