@@ -153,11 +153,12 @@ footer img {
     margin-top: 10px; /* Espacement en haut de l'image */
 }
 /* Style pour la div .adresse */
-.adresse {
+.adherent {
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
     align-items: center; /* Centre les éléments verticalement */
     gap: 20px; /* Espacement horizontal entre les éléments */
 }
+
 
 /* Style pour l'image dans la div .adresse */
 .adresse img {
@@ -236,17 +237,20 @@ th, td {
     padding: 10px; /* Espacement interne pour améliorer la lisibilité */
     border: 1px solid #ccc; /* Ajoutez des bordures aux cellules */
     text-align: left; /* Alignez le texte à gauche par défaut */
+    
 }
 
 /* Style pour les cellules de montant */
 td.montant {
-    text-align: right; /* Alignez le texte des cellules de montant à droite */
-
+    text-align: center; /* Alignez le texte des cellules de montant à droite */
+   display: inline-block;
+   
 }
 
 /* Style pour le libellé */
 .libelle {
     text-align: left; /* Alignez le texte du libellé à gauche */
+    
 }
 
 /* Centrez le texte du libellé et du montant dans la cellule */
