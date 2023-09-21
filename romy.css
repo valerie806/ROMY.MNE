@@ -179,9 +179,14 @@ footer img {
         .image-reduite {
     width: 200px; /* Spécifiez la largeur souhaitée */
     height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
-           
- }
+        }
+    img {
+        max-width: 100px;
+        height: auto;
+    }
+   
 }
+
 /* Style pour le conteneur du texte centré */
 .centered-text {
     text-align: center; /* Centre le texte horizontalement */
