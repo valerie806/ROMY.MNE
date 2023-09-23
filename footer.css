@@ -1,0 +1,52 @@
+/* Style pour le footer */
+footer {
+    background-color: rgba(50, 121, 50, 0.2); /* Fond vert transparent */
+    padding: 20px; /* Espacement autour du contenu du footer */
+    text-align: center; /* Centre le texte dans le footer */
+    color: white; /* Couleur du texte du footer */
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Pour que le train soit positionné correctement */
+}
+
+/* Style pour le train */
+.train {
+    position: absolute;
+    bottom: 0; /* Le train est en bas du footer */
+    left: 50%; /* Le train est centré horizontalement */
+    transform: translateX(-50%); /* Pour centrer le train correctement */
+    width: 100px; /* Spécifiez la largeur souhaitée pour le train */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
+}
+
+/* Style pour le titre du footer */
+footer h1 {
+    font-size: 24px; /* Taille de police du titre */
+    font-weight: bold; /* Police en gras */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+/* Style pour les liens du footer */
+footer a {
+    color: white; /* Couleur des liens dans le footer */
+    text-decoration: none; /* Supprime la décoration de texte des liens */
+    margin: 0 10px; /* Espacement horizontal entre les liens */
+    transition: color 0.2s ease-in-out; /* Transition de couleur en douceur au survol */
+}
+
+/* Style pour les liens du footer au survol de la souris */
+footer a:hover {
+    text-decoration: underline; /* Soulignement au survol des liens */
+}
+
+/* Style pour le fond du footer */
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/train.png'); /* Chemin vers l'image du train */
+    background-size: cover; /* Ajuste la taille de l'image pour remplir tout le footer */
+    opacity: 0.3; /* Opacité de l'image du train */
+    z-index: -1; /* Place l'image en arrière-plan du footer */
+}

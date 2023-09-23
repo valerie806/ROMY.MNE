@@ -1,5 +1,10 @@
+body {
+    margin: 0; /* Supprimer les marges par défaut du navigateur */
+    padding: 0; /* Supprimer les rembourrages par défaut du navigateur */
+}
 
 /* Conteneur principal pour centrer le contenu */
+/* Style pour le conteneur principal */
 .container {
     display: flex;
     align-items: center; /* Centre verticalement */
@@ -8,9 +13,12 @@
     padding: 20px; /* Espacement autour du contenu */
     border-radius: 10px; /* Coins arrondis du conteneur */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    font-family: 'arial', sans-serif;
-
-
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(50, 121, 50, 0.2); /* Fond vert transparent */
+}
+.container img {
+    width: 12%; 
+    height: auto;
 }
 
 /* Réduire la taille de l'image */
@@ -30,7 +38,9 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+h3{
+    font-family: 'arial', sans-serif;
+}
 .texte-centre h3 {
     font-size: 20px;
     margin: 5px 0;
@@ -116,45 +126,47 @@ a img {
 }
 
 /* Style pour le footer */
-footer {
+.contact {
     color: black; /* Couleur du texte du footer */
-    padding: 20px; /* Espacement autour du contenu du footer */
     text-align: center; /* Centre le texte dans le footer */
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* Style pour les titres du footer */
-footer h1, footer h2 {
+.contact h1, .contact h2 {
     font-size: 24px; /* Taille de police des titres du footer */
     font-weight: bold; /* Police en gras */
     margin-bottom: 10px; /* Espacement en bas des titres */
+    font-family: 'arial', sans-serif;
+    padding-top: 15px;
+
 }
 
 /* Style pour les liens du footer */
-footer a {
+.contact a {
     color: black; /* Couleur des liens dans le footer */
     text-decoration: none; /* Supprime la décoration de texte des liens */
     margin: 0 10px; /* Espacement horizontal entre les liens */
     transition: color 0.2s ease-in-out; /* Transition de couleur en douceur au survol */
+    font-family: 'arial', sans-serif;
+
 }
 
 /* Style pour les liens du footer au survol de la souris */
-footer a:hover {
+.contact a:hover {
     text-decoration: underline; /* Soulignement au survol des liens */
     color: green; /* Couleur différente au survol */
 }
 
 /* Style pour les images du footer */
-footer img {
-    max-width: 40px; /* Spécifiez la largeur souhaitée pour les images (40px dans cet exemple) */
+.contact img {
+    max-width: 20px; /* Spécifiez la largeur souhaitée pour les images (40px dans cet exemple) */
     height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
     margin-top: 10px; /* Espacement en haut de l'image */
 }
 /* Style pour la div .adresse */
 .adherent {
-    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
     align-items: center; /* Centre les éléments verticalement */
     gap: 20px; /* Espacement horizontal entre les éléments */
 }
@@ -162,11 +174,16 @@ footer img {
 
 /* Style pour l'image dans la div .adresse */
 .adresse img {
-    max-width: 100px; /* Spécifiez la largeur souhaitée pour l'image */
+    max-width: 15px; /* Spécifiez la largeur souhaitée pour l'image */
     height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
 }
+.text_adresse{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
 .adherent img{
-    max-width: 100px;
+    max-width: 60px;
     height: auto;
     margin-right: 5px;
 }
