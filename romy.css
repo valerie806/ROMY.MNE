@@ -14,8 +14,9 @@ body {
     border-radius: 10px; /* Coins arrondis du conteneur */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
     font-family: 'Arial', sans-serif;
-    background-color: rgba(50, 121, 50, 0.2); /* Fond vert transparent */
+    background-color: rgba(204, 237, 204, 0.2); /* Fond vert transparent */
 }
+
 .container img {
     width: 12%; 
     height: auto;
