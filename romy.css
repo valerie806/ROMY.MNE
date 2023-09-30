@@ -12,12 +12,12 @@ body {
     text-align: center; /* Centre le texte dans le conteneur */
     padding: 20px; /* Espacement autour du contenu */
     border-radius: 10px; /* Coins arrondis du conteneur */
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     font-family: 'Arial', sans-serif;
     background-color: rgba(204, 237, 204, 0.2); /* Fond vert transparent */
 }
 
-.container img {
+container img {
     width: 12%; 
     height: auto;
 }
@@ -195,7 +195,7 @@ a img {
         font-size: 14px;
     }
         .image-reduite {
-    width: 200px; /* Spécifiez la largeur souhaitée */
+    max-width: 100px; /* Spécifiez la largeur souhaitée */
     height: auto; /* Permet à la hauteur de s'ajuster automatiquement en conservant les proportions d'origine */
         }
     img {
